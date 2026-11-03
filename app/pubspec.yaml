@@ -1,0 +1,25 @@
+name: bam_doan
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_compass: ^0.8.1
+  flutter_map: ^8.3.2
+  flutter_secure_storage: ^11.2.0
+  geolocator: ^14.0.1
+  http: ^1.6.0
+  latlong2: ^0.10.1
+  wakelock_plus: ^1.8.2
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

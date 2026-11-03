@@ -1,0 +1,21 @@
+services:
+  db:
+    # Bản build đa kiến trúc (có arm64) của PostGIS; image postgis/postgis chỉ có amd64
+    image: imresamu/postgis:17-3.5
+    environment:
+      POSTGRES_USER: bamdoan
+      POSTGRES_PASSWORD: bamdoan
+      POSTGRES_DB: bamdoan
+    ports:
+      - "5433:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+      - ./server/scripts/init-test-db.sql:/docker-entrypoint-initdb.d/init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U bamdoan"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  db-data:

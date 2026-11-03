@@ -1,0 +1,39 @@
+{
+  "name": "bamdoan-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=.env src/index.ts",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx --env-file-if-exists=.env src/db/migrate.ts",
+    "test": "vitest run",
+    "sim": "tsx --env-file-if-exists=.env scripts/simulate.ts"
+  },
+  "dependencies": {
+    "@fastify/rate-limit": "^11.2.2",
+    "@fastify/type-provider-typebox": "^6.3.0",
+    "@fastify/websocket": "^11.3.6",
+    "drizzle-orm": "^0.45.4",
+    "fastify": "^5.12.8",
+    "jose": "^6.2.15",
+    "postgres": "^3.4.9",
+    "typebox": "^1.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "@types/ws": "^8.18.2",
+    "drizzle-kit": "^0.31.11",
+    "pino-pretty": "^13.2.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0",
+    "ws": "^8.22.1"
+  }
+}
