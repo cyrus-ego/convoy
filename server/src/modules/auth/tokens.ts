@@ -2,7 +2,7 @@ import type { FastifyRequest } from 'fastify';
 import { jwtVerify, SignJWT } from 'jose';
 import { unauthorized } from '../../lib/errors.js';
 
-const AUDIENCE = 'bamdoan';
+const AUDIENCE = 'convoy';
 
 export class TokenService {
   private readonly key: Uint8Array;

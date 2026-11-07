@@ -1,4 +1,4 @@
-package vn.bamdoan.bam_doan
+package vn.bamdoan.app
 
 import io.flutter.embedding.android.FlutterActivity
 

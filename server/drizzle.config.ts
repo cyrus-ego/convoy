@@ -4,6 +4,6 @@ export default defineConfig({
   dialect: 'postgresql',
   schema: './src/db/schema.ts',
   out: './drizzle',
-  dbCredentials: { url: process.env.DATABASE_URL ?? 'postgres://bamdoan:bamdoan@localhost:5433/bamdoan' },
+  dbCredentials: { url: process.env.DATABASE_URL ?? 'postgres://convoy:convoy@localhost:5433/convoy' },
   extensionsFilters: ['postgis'],
 });

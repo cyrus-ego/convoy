@@ -1,4 +1,4 @@
-# Bám Đoàn
+# Bám Đoàn (repo `convoy`)
 
 App cho đoàn đi phượt: mỗi người thấy vị trí cả đoàn, người dùng ở giữa màn hình, đồng đội ở xa
 ghim lên rìa màn hình theo đúng hướng thực tế (bản đồ xoay theo hướng đi).
@@ -40,7 +40,7 @@ npm run sim -- --code ABCD-2345 --center 21.0285,105.8542
 ## Test
 
 ```bash
-cd server && npm test        # unit + integration với Postgres thật (DB bamdoan_test)
+cd server && npm test        # unit + integration với Postgres thật (DB convoy_test)
 cd app && flutter test
 ```
 

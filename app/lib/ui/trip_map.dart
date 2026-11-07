@@ -80,7 +80,7 @@ class _TripMapState extends State<TripMap> {
         },
       ),
       children: [
-        TileLayer(urlTemplate: AppConfig.tileUrl, userAgentPackageName: 'vn.bamdoan.bam_doan'),
+        TileLayer(urlTemplate: AppConfig.tileUrl, userAgentPackageName: 'vn.bamdoan.app'),
         EdgeOverlay(controller: widget.controller, chrome: widget.chrome, onTap: widget.onTapMember),
       ],
     );

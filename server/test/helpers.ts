@@ -6,7 +6,7 @@ import { createDb } from '../src/db/client.js';
 import type { Notifier } from '../src/modules/notify/notifier.js';
 import type { ServerMsg, TripEvent } from '../src/modules/realtime/protocol.js';
 
-export const TEST_DB_URL = process.env.DATABASE_URL_TEST ?? 'postgres://bamdoan:bamdoan@localhost:5433/bamdoan_test';
+export const TEST_DB_URL = process.env.DATABASE_URL_TEST ?? 'postgres://convoy:convoy@localhost:5433/convoy_test';
 
 export class RecordingNotifier implements Notifier {
   readonly sent: { tripId: string; event: TripEvent; recipientIds: string[] }[] = [];

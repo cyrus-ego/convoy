@@ -1,1 +1,1 @@
-CREATE DATABASE bamdoan_test OWNER bamdoan;
+CREATE DATABASE convoy_test OWNER convoy;

@@ -1,3 +1,3 @@
-# bam_doan
+# Bám Đoàn – app Flutter
 
-A new Flutter project.
+Xem cách chạy và cấu trúc dự án ở [README gốc](../README.md).
